@@ -1,4 +1,4 @@
-# ⚡ ChargeUp: Role-Based SaaS Billing Portal
+# ChargeUp: Role-Based SaaS Billing Portal
 
 A modern, premium, role-based SaaS billing portal built in the **MERN** stack. Styled with a crisp, premium **white/light-mode** layout inspired by modern SaaS products (like Stripe and Linear). 
 
@@ -9,12 +9,12 @@ This portal features mock subscription management, role-based access control (RB
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Authentication & Role-Based Access Control (RBAC):**
-  * 👑 **Owner:** Full workspace controls, team member invitation, role changes, payment management, and subscription tier selection.
-  * 💳 **Billing Admin:** Finance controls only. Access to invoices, print receipts, and subscription tier changes (cannot manage team).
-  * 👥 **Member:** Read-only access. View plan quotas, storage capacity, and next billing date (cannot change plans, view invoices, or manage teams).
+  * **Owner:** Full workspace controls, team member invitation, role changes, payment management, and subscription tier selection.
+  * **Billing Admin:** Finance controls only. Access to invoices, print receipts, and subscription tier changes (cannot manage team).
+  * **Member:** Read-only access. View plan quotas, storage capacity, and next billing date (cannot change plans, view invoices, or manage teams).
 * **Resource Usage Quotas:** Visual dashboard gauges tracking seat usage, API calls, and storage limits. Warning banners trigger automatically when approaching limits.
 * **Simulated Stripe Checkout:** Prefilled mock payment modal to complete plan upgrades/downgrades.
 * **Printable Invoices:** Clean printable billing history receipt overlays showing itemized sub-totals. Supports native browser printing controls.
@@ -22,7 +22,7 @@ This portal features mock subscription management, role-based access control (RB
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Frontend:** React, Vite, Axios, React Icons, Vanilla CSS (clean, responsive grid tokens).
 * **Backend:** Node.js, Express, Mongoose, JWT (JSON Web Tokens) Auth, Bcrypt.js.
@@ -30,7 +30,7 @@ This portal features mock subscription management, role-based access control (RB
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 saas-billing-portal/
@@ -57,7 +57,7 @@ saas-billing-portal/
 
 ---
 
-## 🏃 Getting Started
+## Getting Started
 
 ### Prerequisites
 You only need **Node.js** installed on your system. If you do not have MongoDB running locally, the project will automatically fallback to in-memory mode.
@@ -77,7 +77,7 @@ You only need **Node.js** installed on your system. If you do not have MongoDB r
 
 ---
 
-## 🔑 Seeding & Test Credentials
+## Seeding & Test Credentials
 
 On the login screen, click **"Quick Demo: Seed & Auto-Login as Owner"** to write test accounts and log in as Alice immediately. 
 
@@ -91,5 +91,5 @@ For manual login, use the password **`password123`** (Alice uses **`alice123`**)
 
 ---
 
-## 🔒 Downgrade Quota Filters
+## Downgrade Quota Filters
 This billing portal replicates real-world business constraints. For example, if you have 8 active members in your workspace, trying to downgrade to the **Free** tier (5 seat limit) will prompt a safety check validation error warning: *"Remove team members first before downgrading."*
